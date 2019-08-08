@@ -128,6 +128,7 @@ module "key-vault" {
   object_id           = "${var.jenkins_AAD_objectId}"
   resource_group_name = "${module.s2s-api.resource_group_name}"
   # dcd_reform_dev_logs group object ID
-  product_group_object_id = "70de400b-4f47-4f25-a4f0-45e1ee4e4ae3"
+  # product_group_object_id = "70de400b-4f47-4f25-a4f0-45e1ee4e4ae3"
+  product_group_object_id = "c815b780-7710-47fd-b83b-350a0b0fe204"
   count               = "${local.is_preview ? 0 : 1}"
 }
