@@ -121,7 +121,7 @@ module "s2s-api" {
 }
 
 module "key-vault" {
-  source              = "git@github.com:hmcts/moj-module-key-vault?ref=feature/add-count-input-variable"
+  source              = "git@github.com:hmcts/moj-module-key-vault?ref=ethosldata"
   product             = "s2s"
   env                 = "${var.env}"
   tenant_id           = "${var.tenant_id}"
